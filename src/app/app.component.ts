@@ -6,9 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  public mostrar: boolean;
-  constructor() {
-    this.mostrar = false;
-  }
+  constructor() { }
   title = 'angularempleadosauth';
 }

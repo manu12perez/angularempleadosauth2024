@@ -24,8 +24,10 @@ export class LoginComponent implements OnInit {
     let user = new Login(userName, password);
     this._service.loginEmpleado(user).subscribe(response => {
       console.log("listo");
+      console.log(response.response);
       this._service.token = response.response;
       this.respuesta = response.response;
+      this._router.navigate(["/perfil"]);
     })
   }
 
